@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformers.js - Object Detection demo</title>
+</head>
+
+<body>
+    <main class="container">
+        <div style="display: flex; justify-content: space-evenly;width: 100%; padding: 10px;">
+            <label for="user">user:</label>
+            <select id="user" name="user">
+                <option value="1">all</option>
+                <option value="2">alex</option>
+                <option value="3">user1</option>
+                <option value="4">user2</option>
+                <option value="5">user3</option>
+            </select>
+            <label for="action">action:</label>
+            <select id="action" name="action">
+                <option value="login">login</option>
+                <option value="scan">scan</option>
+            </select>
+            <button class="custom-file-upload" id="myBtn">
+                load history
+            </button>
+        </div>
+        <div id="history"></div>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
