@@ -53,7 +53,7 @@ function processHistory(e) {
 
 
     for (let i = 0; i < fetchedHistory.length; i++) {
-        if (fetchedHistory[i].location == undefined || fetchedHistory[i].location == null || fetchedHistory[i].location == "uk" || fetchedHistory[i].location.includes("United Kingdom")){
+        if (fetchedHistory[i].location == undefined || fetchedHistory[i].location == null){ // || fetchedHistory[i].location == "uk" || fetchedHistory[i].location.includes("United Kingdom")){
             continue
         }
         if (selectedUser.value == "1" || fetchedHistory[i].userID == selectedUser.value) {
